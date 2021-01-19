@@ -15,6 +15,7 @@ export const HeaderContent = styled.div`
   align-items: center;
   > img {
     height: 80px;
+    object-fit: cover;
   }
   button {
     margin-left: auto;
@@ -37,6 +38,7 @@ export const Profile = styled.div`
     width: 56px;
     height: 56px;
     border-radius: 50%;
+    object-fit: cover;
   }
   div {
     display: flex;
@@ -46,8 +48,13 @@ export const Profile = styled.div`
     span {
       color: #f4ede8;
     }
-    strong {
+    a {
+      text-decoration: none;
       color: #ff9000;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 `;
